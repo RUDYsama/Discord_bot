@@ -14,6 +14,10 @@ const CHANNEL_ID = "1300853186990575617";
 const USER_ID = "511921901677969408";
 const TIMEOUT = 20 * 60 * 1000;
 
+// 🔍 DEBUG TOKEN (ชั่วคราว)
+console.log("TOKEN EXISTS:", !!process.env.BOT_TOKEN);
+console.log("TOKEN LENGTH:", process.env.BOT_TOKEN?.length);
+
 let lastWebhookTime = Date.now();
 
 client.on('ready', () => {
